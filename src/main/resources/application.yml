@@ -3,8 +3,8 @@ spring:
 name: test-YAML
 environment: test
 servers:
-    - www.abc.test.com
-    - www.xyz.test.com
+    - www.test1.server.com
+    - www.test2.server.com
 
 ---
 spring:
@@ -13,8 +13,8 @@ spring:
 name: prod-YAML
 environment: production
 servers:
-    - www.abc.com
-    - www.xyz.com
+    - www.prod1.server.com
+    - www.prod2.server.com
 
 stackstorm-columbus:
   hostname: https://ishtiaq.com
