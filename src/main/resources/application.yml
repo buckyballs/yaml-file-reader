@@ -1,0 +1,30 @@
+spring:
+    profiles: test
+name: test-YAML
+environment: test
+servers:
+    - www.abc.test.com
+    - www.xyz.test.com
+
+---
+spring:
+    profiles:
+      active: prod
+name: prod-YAML
+environment: production
+servers:
+    - www.abc.com
+    - www.xyz.com
+
+stackstorm-columbus:
+  hostname: https://ishtiaq.com
+  trigger.time: "0 14 11 * * MON"
+  username: ish2learn
+  password: password
+  auth: /auth/tokens
+  headername: X-AUTH-PASS
+  resources: /api/v1/kite
+  pings: 10
+  delay: 10
+  fixed: 10
+  myString: "hhDD"
