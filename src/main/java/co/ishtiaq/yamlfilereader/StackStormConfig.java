@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service // @Componnet, @Service, @Configuration all works here
 @ConfigurationProperties(prefix ="stackstorm-columbus" )
+// @EnableConfigurationProperties
 public class StackStormConfig {
 
     //@Value("${hostname}")
