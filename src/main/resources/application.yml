@@ -16,8 +16,9 @@ servers:
     - www.prod1.server.com
     - www.prod2.server.com
 
+base-url: https://ishtiaq.com
 stackstorm-columbus:
-  hostname: https://ishtiaq.com
+  hostname: ${base-url}/works
   trigger.time: "0 14 11 * * MON"
   username: ish2learn
   password: password
